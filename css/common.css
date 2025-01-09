@@ -1,0 +1,126 @@
+@charset 'utf-8';
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+    font-family: "EF_Rebecca";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_Rebecca.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    font-size: 100%;
+    font-size: 62.5%;
+    --main-color: #a00000;
+    --title-color: #333;
+    --text-color: #666;
+    --line-color: rgba(0, 0, 0, 0.3);
+    --bg-color: #e5e5e5;
+    --white10p: rgba(255, 255, 255, 0.1);
+    --white20p: rgba(255, 255, 255, 0.2);
+    --white30p: rgba(255, 255, 255, 0.3);
+    --white40p: rgba(255, 255, 255, 0.4);
+    --white50p: rgba(255, 255, 255, 0.5);
+    --white60p: rgba(255, 255, 255, 0.6);
+    --white70p: rgba(255, 255, 255, 0.7);
+    --white80p: rgba(255, 255, 255, 0.8);
+
+    --rds50: 5rem;
+    --rds25: 2.5rem;
+    --rds50p: 50%;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+hr,
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font: 2rem/1.5 Pretendard, sans-serif;
+    color: var(--text-color);
+    word-break: keep-all;
+}
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 7rem;
+    line-height: 1;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.title p {
+    margin-top: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.btn {
+    display: inline-block;
+    width: 15rem;
+    padding: 1rem 3rem;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: var(--rds50);
+    color: #fff;
+    background: #000;
+}
+
+.btn:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.btn-big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+    width: 20rem;
+    height: 6.2rem;
+    padding: 0 4rem;
+    font-weight: 700;
+    font-size: 2rem;
+    background: #fff;
+    color: var(--main-color);
+    border-radius: var(--rds50);
+}
+
+.btn-big:hover {
+    background: var(--main-color);
+    color: #fff;
+}
