@@ -287,12 +287,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
+
                         <!-- If we need navigation buttons -->
                         <div class="sw-btn-prev sw-btn"></div>
                         <div class="sw-btn-next sw-btn"></div>
                     </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
         </main>
@@ -340,29 +341,8 @@
             </div>
         </footer>
         <!-- //e:footer -->
-        <a href="#top">top</a>
+        <a href="#top" class="top-btn"><i class="hidden">top</i></a>
 
-        <script>
-            const snsSlider = new Swiper(".sns-slider", {
-                loop: true,
-                autoplay: true,
-                speed: 1000,
-                centeredSlides: true, // 활성화된 슬라이드를 가운데로
-                slidesPerView: 8,
-                spaceBetween: 20,
-
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                // Navigation arrows
-                navigation: {
-                    nextEl: ".sw-btn-next",
-                    prevEl: ".sw-btn-prev",
-                },
-            });
-
-            AOS.init();
-        </script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
