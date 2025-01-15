@@ -118,6 +118,23 @@ nav ul {
     font-size: 2.4rem;
 }
 
+.btn-menu {
+    display: none;
+}
+
+.btn-menu::after {
+    content: "\EF3E";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    aspect-ratio: 1;
+    font-family: remixicon;
+    font-size: 2.8rem;
+    color: #fff;
+    /* border: 1px solid #fff; */
+}
+
 .title {
     margin: 0 auto;
     text-align: center;
@@ -272,6 +289,20 @@ nav ul {
 @media screen and (max-width: 1200px) {
     #header .gnb,
     .util-menu {
+        display: none;
+    }
+
+    .btn-menu {
+        display: flex;
+    }
+
+    .btn-menu::after {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #footer .icon-downlord {
         display: none;
     }
 }

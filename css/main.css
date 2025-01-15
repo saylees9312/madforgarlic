@@ -117,8 +117,13 @@
     gap: 8.3333%;
 }
 
+.shortcut li {
+    width: 16rem;
+    width: 20%;
+}
+
 .shortcut li a {
-    width: clamp(14rem, 8.3333vw, 16rem);
+    width: 100%;
     aspect-ratio: 1/1;
     border: 1px solid var(--main-color);
     border-radius: var(--rds50p);
@@ -175,14 +180,15 @@
 .membership-banner {
     max-width: 1920px;
     height: 60rem;
-    margin: 40px auto;
+    margin: 4rem auto;
     position: relative;
     background: url(../img/img-membership-bg.jpg) no-repeat 0 0 / cover;
 }
 
 .membership-con {
+    width: 46.6rem;
     width: 24.2708%;
-    height: 46.3rem;
+    aspect-ratio: 1;
     background: var(--white50p);
     border-radius: var(--rds50);
 
@@ -354,6 +360,11 @@
     margin-top: 6rem;
 }
 
+.recruit-banner .btn-big::after {
+    content: "";
+    display: none;
+}
+
 .recruit-list {
     margin-top: 4rem;
     display: flex;
@@ -362,6 +373,7 @@
 }
 
 .recruit-list li {
+    width: 38.7rem;
     width: 32.2222%;
     min-height: 20rem;
     /* border: 1px solid #000; */
@@ -546,22 +558,200 @@
     .inner {
         width: 93.3333%;
     }
+
+    .visual .video {
+        height: 100%;
+        aspect-ratio: 1/0.5625;
+    }
+
+    .best-list li figure {
+        width: 55rem;
+        width: 49.1071%;
+        aspect-ratio: 1/1.1636;
+    }
+
+    .best-list .best-menu {
+        width: 48rem;
+        width: 42.8571%;
+    }
     .shortcut {
-        gap: 10.8333%;
+        width: 74.4rem;
+        width: 62%;
+        margin: 7.6rem auto;
+        /* gap: 13rem;
+        gap: 10.8333%; */
+    }
+
+    .shortcut li {
+        width: 16rem;
+        width: 21.5054%;
     }
 
     .membership-con {
-        width: 30.1666%;
-        height: 38.3rem;
+        width: 36.2rem;
+        width: 30.1667%;
+        aspect-ratio: 1/1.058;
+    }
+    .membership-list {
+        gap: auto;
     }
 
     .membership-list li {
+        width: 54.8rem;
         width: 48.9286%;
-        width: clamp(28.4rem, calc((100% - 2rem) / 2), 48.9285%);
         height: 29rem;
     }
 
     .recruit-list li {
         width: 32.14%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .inner {
+        width: 50rem;
+        width: 89.2857%;
+    }
+    section {
+        padding: 5rem 0 !important;
+    }
+    .title h2 {
+        font-size: 4rem;
+    }
+
+    .title p {
+        font-size: 1.8rem;
+    }
+    .visual .video {
+        height: 36rem;
+        aspect-ratio: 1/0.6429;
+    }
+    .best-list li {
+        flex-direction: column;
+    }
+
+    .best-list li:nth-child(2) {
+        flex-direction: column;
+    }
+    .best-list li figure {
+        width: 100%;
+        height: 39.6rem;
+        aspect-ratio: 1/0.792;
+    }
+    .best-list .best-menu {
+        width: 100%;
+    }
+
+    .best-menu dl dt {
+        font-size: 3.6rem;
+    }
+    .best-menu dl dd {
+        font-size: 2rem;
+    }
+
+    .shortcut {
+        width: 89.2857%;
+    }
+    .shortcut li {
+        width: 14rem;
+        width: 28%;
+        aspect-ratio: 1;
+    }
+
+    .shortcut li a {
+        font-size: 2rem;
+    }
+
+    .membership-banner {
+        width: 100%;
+        height: initial;
+        aspect-ratio: 1/0.7143;
+    }
+
+    .membership-con {
+        width: 24.5rem;
+        width: 43.75%;
+        height: 22.7rem;
+        aspect-ratio: 1/0.9265;
+    }
+
+    .membership-con h3 {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .membership-con h3 i {
+        font-size: 3.2rem;
+        color: #000;
+    }
+
+    .membership-con p {
+        display: none;
+    }
+
+    .membership-con .btn {
+        width: 5rem;
+        aspect-ratio: 1;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .membership-con .btn i {
+        display: none;
+    }
+    .membership-list {
+        gap: 1.6rem;
+    }
+
+    .membership-list li {
+        width: 24.2rem;
+        width: 48.4%;
+        height: 20.7rem;
+        aspect-ratio: 1/0.8554;
+    }
+
+    .membership-list li dl dt {
+        font-size: 1.8rem;
+    }
+    .membership-list li dl dd {
+        display: none;
+    }
+
+    .recruit-con {
+        height: 33rem;
+    }
+
+    .recruit-banner {
+        aspect-ratio: 1/0.66;
+        padding: 6rem 8rem;
+    }
+    .recruit-banner h3 {
+        font-size: 2.2rem;
+    }
+    .recruit-banner strong {
+        font-size: 1.6rem;
+    }
+    .recruit-banner p {
+        display: none;
+    }
+    .recruit-banner .btn-big {
+        margin-top: 2rem;
+        width: 7rem;
+        aspect-ratio: 1;
+    }
+    .recruit-banner .btn-big i {
+        font-size: 2.8rem;
+    }
+    .recruit-banner .btn-big b {
+        display: none;
+    }
+
+    .recruit-list {
+        gap: 1.6rem;
+    }
+
+    .recruit-list li {
+        width: 24.2rem;
+        width: 48.4%;
     }
 }

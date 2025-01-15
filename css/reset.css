@@ -131,3 +131,6 @@ table {
 img {
     vertical-align: top;
 }
+button {
+    background: transparent;
+}
