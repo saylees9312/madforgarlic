@@ -121,6 +121,7 @@
     aspect-ratio: 1/1;
     border: 1px solid var(--main-color);
     border-radius: var(--rds50p);
+    overflow: hidden;
 }
 
 .shortcut li a {

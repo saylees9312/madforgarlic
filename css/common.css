@@ -301,10 +301,16 @@ nav ul {
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
     #footer .icon-downlord {
         display: none;
     }
+    .top-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
     #footer .footer-adress {
         font-size: 1.4rem;
     }

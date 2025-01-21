@@ -2,6 +2,7 @@
 
 .inner {
     width: 1400px;
+    width: 72.9167%;
     margin: 0 auto;
 }
 
@@ -33,10 +34,20 @@
     padding: 10rem 0;
 }
 
+.pc-none {
+    width: initial;
+}
+
+.menu-tab {
+    margin: 0 auto;
+}
+
 .tab-list {
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 3rem;
+    margin: 0 auto;
 }
 
 .tab-list .btn {
@@ -61,7 +72,7 @@
 
 .menu h2 {
     font-weight: 700;
-    font-size: 7rem;
+    font-size: clamp(4rem, 4.5vw, 7rem);
     color: #000;
     text-align: center;
 }
@@ -77,7 +88,7 @@
 
 .menu-con h3 {
     font-weight: 700;
-    font-size: 5rem;
+    font-size: clamp(4rem, 4vw, 5rem);
     line-height: 1.4;
     text-align: center;
     color: var(--main-color);
@@ -91,20 +102,23 @@
 }
 
 .menu-list li {
-    width: calc((100% - 18rem) / 4);
+    width: calc((100% - (6rem * 3)) / 4);
     min-height: 34.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     position: relative;
+    /* border: 1px solid #000; */
 }
 
 .menu-list li a figure {
     width: 27rem;
+    width: 88.5246%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .menu-list li a figure img {
@@ -122,7 +136,7 @@
 
 .menu-list li a dl dt {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: clamp(1.6rem, 2.86vw, 2rem);
     line-height: 1.5;
     color: #000;
 }
@@ -242,4 +256,79 @@
     position: absolute;
     top: 5%;
     right: 5%;
+}
+
+@media screen and (max-width: 1650px) {
+    .menu-tab {
+        overflow-x: scroll;
+        /* border: 1px solid #000; */
+    }
+
+    .tab-list {
+        width: 100%;
+        /* border: 1px solid red; */
+        justify-content: initial;
+        width: 104rem;
+        width: 86.6667%;
+    }
+}
+
+/* 반응형 태블릿 분기점 */
+@media screen and (max-width: 1200px) {
+    .inner {
+        width: 104rem;
+        width: 86.6667%;
+    }
+
+    .visual figure {
+        height: 33rem;
+    }
+
+    .menu {
+        padding: 8rem 0 16rem;
+    }
+
+    .tab-list li {
+        flex-shrink: 0;
+    }
+
+    .menu-list {
+        margin-top: 9rem;
+        gap: 10rem 4rem;
+    }
+    .menu-list li {
+        /* border: 1px solid #000; */
+        width: calc((100% - (4rem * 2)) / 3);
+        min-height: 35rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu-list li {
+        width: calc((100% - 6rem) / 2);
+    }
+}
+
+/* 반응형 모바일 분기점 */
+
+@media screen and (max-width: 560px) {
+    .inner {
+        width: 46rem;
+        width: 82.1429%;
+    }
+
+    .visual figure {
+        height: 30rem;
+    }
+    /* .menu h2 {
+        font-size: 4rem;
+    } */
+
+    .menu-con h3 {
+        font-size: 4rem;
+    }
+
+    .menu-list li {
+        width: 100%;
+    }
 }
